@@ -23,7 +23,29 @@ namespace controle_de_arquivos_C
 
             Diretorio();
             criar();
+            List<string> listaTeste = new List<string>();
         }
+
+        class Teste //criar classe  para teste 
+        {
+            public string Nome { get; set; } // propriedades da classe
+            public int X { get; set; }
+            public int Y { get; set; }
+            public int Z { get; set; }
+
+            // construtores da classe:
+            public Teste(string nome, int x, int y, int z)
+            {
+                // associa a entrada com a propriedade da classe
+                this.Nome = nome;
+                this.X = x;
+                this.Y = y;
+                this.Z = z;
+
+            }
+        }
+
+        List<string> listaTeste = new List<string>();
 
         // variaveis
         int pi;
@@ -201,6 +223,7 @@ namespace controle_de_arquivos_C
             }
         }
 
+        ///https://pablobatistacardoso.wordpress.com/2012/12/15/ler-aquivo-txt-e-armazenar-em-um-list-c/
 
         ///http://csharpbrasil.com.br/trabalhando-com-arquivos-em-c-parte-2/
         ///
